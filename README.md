@@ -21,7 +21,7 @@ Following is an example command to run experiments on molecular and polymer imba
 python main.py --dataset ogbg-mollipo
 ```
 
-The dataset name can be any of `[ogbg-mollipo, ogbg-molesol, ogbg-molfreesolv, 'plym-density', 'plym-oxygen', 'plym-melting']`. We note that we follow the "Open Graph Benchmark" to implement the three molecular regression tasks. But we split the datasets to characterize imbalanced training distributions and balanced test distributions. Details can be found in the paper or in the function: `dataset/data_utils.py/make_balanced_testset`. The cached index for splitting can be found in `/raw_data/'dataset'/split/balance`
+The dataset name can be any of `[ogbg-mollipo, ogbg-molesol, ogbg-molfreesolv, 'plym-density', 'plym-oxygen', 'plym-melting']`. We follow the "Open Graph Benchmark" to implement the three molecular regression tasks. But we use different data splitting on these datasets to characterize imbalanced training distributions and balanced test distributions. Details can be found in our paper and in the function: `dataset/data_utils.py/make_balanced_testset`. The cached index for splitting can be found in `/raw_data/'dataset'/split/balance`
 
 ## Citation
 
