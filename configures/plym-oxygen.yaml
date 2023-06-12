@@ -1,0 +1,24 @@
+trails: 5
+epochs: 200
+num_workers: 0
+no_print: True
+
+### grea model
+initw_name: orthogonal
+emb_dim: 320
+drop_ratio: 0.9
+gamma: 0.9
+num_layer: 5
+lw_Rreg: 0.75
+lw_xenvs: 0.01
+temperature: 0.01
+
+### selection
+update_select: 25
+anchor_select: 25
+var_threshold: 0.3
+
+### label-anchored augmentation
+update_aug: 25
+anchor_aug: 1000
+lw_aug: 0.5

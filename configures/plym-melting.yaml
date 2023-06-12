@@ -1,0 +1,32 @@
+# CUDA_VISIBLE_DEVICES=1 python main.py --dataset plym-melting --epochs 1000 --many-threshold 1.5 --medium-threshold 3 \
+#     --trails 5 --patience 1000 --num-layer 3 --num-workers 0 \
+#     --temperature 5 --lw-Rreg 0.5 --lw-xenvs 0.1 \
+#     --update-select 30 --var-threshold 0.01 \
+#     --update-aug 30 --anchor-aug 500 --lw-aug 1e-3 \
+#     --no-print 
+
+trails: 5
+epochs: 600
+patience: 600
+num_workers: 0
+no_print: True
+
+### grea model
+drop_ratio: 0.1
+gamma: 0.4
+num_layer: 3
+lw_Rreg: 0.5
+lw_xenvs: 0.1
+# temperature: 5
+temperature: 10
+
+
+### selection
+update_select: 30
+anchor_select: 50
+var_threshold: 0.01
+
+### label-anchored augmentation
+update_aug: 30
+anchor_aug: 500
+lw_aug: 0.001

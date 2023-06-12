@@ -1,0 +1,23 @@
+trails: 5
+epochs: 500
+patience: 500
+num_workers: 0
+no_print: True
+
+### grea model
+drop_ratio: 0.1
+gamma: 0.4
+num_layer: 5
+lw_Rreg: 1
+lw_xenvs: 1
+temperature: 5
+
+### selection
+update_select: 10
+anchor_select: 50
+var_threshold: 0.5
+
+### label-anchored augmentation
+update_aug: 100
+anchor_aug: 200
+lw_aug: 0.0001
